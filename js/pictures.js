@@ -1,30 +1,35 @@
-let usersPhotoArr = [{url: 'photos/1.jpg,', likes: 38, comments: 'Всё отлично!', description: 'Затусили с друзьями на море'},
-  {url: 'photos/2.jpg,', likes: 44, comments: 'Всё отлично!', description: 'Не обижайте всех словами...'},
-  {url: 'photos/3.jpg,', likes: 144, comments: 'Когда вы делаете фотографию, хорошо бы убирать палец из кадра. В конце концов это просто непрофессионально.', description: 'Отдыхаем...'},
-  {url: 'photos/4.jpg,', likes: 28, comments: 'Моя бабушка случайно чихнула с фотоаппаратом в руках и у неё получилась фотография лучше.', description: 'Цените каждое мгновенье.'},
-  {url: 'photos/5.jpg,', likes: 180, comments: 'Я поскользнулся на банановой кожуре и уронил фотоаппарат на кота и у меня получилась фотография лучше.', description: 'Не обижайте всех словами...'},
-  {url: 'photos/6.jpg,', likes: 179, comments: 'Я поскользнулся на банановой кожуре и уронил фотоаппарат на кота и у меня получилась фотография лучше.', description: 'Отдыхаем...'},
-  {url: 'photos/7.jpg,', likes: 31, comments: 'Моя бабушка случайно чихнула с фотоаппаратом в руках и у неё получилась фотография лучше.', description: 'Отдыхаем...'},
-  {url: 'photos/8.jpg,', likes: 65, comments: 'Всё отлично!', description: 'Вот это тачка!'},
-  {url: 'photos/9.jpg,', likes: 171, comments: 'Как можно было поймать такой неудачный момент?!', description: 'Цените каждое мгновенье.'},
-  {url: 'photos/10.jpg,', likes: 40, comments: 'Я поскользнулся на банановой кожуре и уронил фотоаппарат на кота и у меня получилась фотография лучше.', description: 'Вот это тачка!'},
-  {url: 'photos/11.jpg,', likes: 113, comments: 'Лица у людей на фотке перекошены, как будто их избивают.', description: 'Цените тех, кто рядом с вами и отгоняйте все сомненья.'},
-  {url: 'photos/12.jpg,', likes: 197, comments: 'В целом всё неплохо. Но не всё.', description: 'Затусили с друзьями на море'},
-  {url: 'photos/13.jpg,', likes: 63, comments: 'Лица у людей на фотке перекошены, как будто их избивают.', description: 'Цените каждое мгновенье.'},
-  {url: 'photos/14.jpg,', likes: 48, comments: 'Лица у людей на фотке перекошены, как будто их избивают.', description: 'Отдыхаем...'},
-  {url: 'photos/15.jpg,', likes: 100, comments: 'В целом всё неплохо. Но не всё.', description: 'Тестим новую камеру!'},
-  {url: 'photos/16.jpg,', likes: 141, comments: 'В целом всё неплохо. Но не всё.', description: 'Цените каждое мгновенье.'},
-  {url: 'photos/17.jpg,', likes: 123, comments: 'Когда вы делаете фотографию, хорошо бы убирать палец из кадра. В конце концов это просто непрофессионально.', description: 'Как же круто тут кормят'},
-  {url: 'photos/18.jpg,', likes: 25, comments: 'Всё отлично!', description: 'Затусили с друзьями на море'},
-  {url: 'photos/19.jpg,', likes: 19, comments: 'Я поскользнулся на банановой кожуре и уронил фотоаппарат на кота и у меня получилась фотография лучше.', description: 'Цените каждое мгновенье.'},
-  {url: 'photos/20.jpg,', likes: 82, comments: 'Моя бабушка случайно чихнула с фотоаппаратом в руках и у неё получилась фотография лучше.', description: 'Не обижайте всех словами...'},
-  {url: 'photos/21.jpg,', likes: 53, comments: 'Моя бабушка случайно чихнула с фотоаппаратом в руках и у неё получилась фотография лучше.', description: 'Затусили с друзьями на море'},
-  {url: 'photos/22.jpg,', likes: 99, comments: 'Лица у людей на фотке перекошены, как будто их избивают.', description: 'Вот это тачка!'},
-  {url: 'photos/23.jpg,', likes: 24, comments: 'В целом всё неплохо. Но не всё.', description: 'Тестим новую камеру!'},
-  {url: 'photos/24.jpg,', likes: 181, comments: 'Когда вы делаете фотографию, хорошо бы убирать палец из кадра. В конце концов это просто непрофессионально.', description: 'Затусили с друзьями на море'},
-  {url: 'photos/25.jpg,', likes: 41, comments: 'Моя бабушка случайно чихнула с фотоаппаратом в руках и у неё получилась фотография лучше.', description: 'Не обижайте всех словами...'}
+let bigPicture = document.querySelector('.big-picture')
+
+// bigPicture.classList.remove('hidden')
+
+let usersPhotoArr = [
+  { url: 'photos/1.jpg', likes: 38, comments: 'Всё отлично!', description: 'Затусили с друзьями на море' },
+  { url: 'photos/2.jpg', likes: 44, comments: 'Всё отлично!', description: 'Не обижайте всех словами...' },
+  { url: 'photos/3.jpg', likes: 144, comments: 'Когда вы делаете фотографию, хорошо бы убирать палец из кадра. В конце концов это просто непрофессионально.', description: 'Отдыхаем...' },
+  { url: 'photos/4.jpg', likes: 28, comments: 'Моя бабушка случайно чихнула с фотоаппаратом в руках и у неё получилась фотография лучше.', description: 'Цените каждое мгновенье.' },
+  { url: 'photos/5.jpg', likes: 180, comments: 'Я поскользнулся на банановой кожуре и уронил фотоаппарат на кота и у меня получилась фотография лучше.', description: 'Не обижайте всех словами...' },
+  { url: 'photos/6.jpg', likes: 179, comments: 'Я поскользнулся на банановой кожуре и уронил фотоаппарат на кота и у меня получилась фотография лучше.', description: 'Отдыхаем...' },
+  { url: 'photos/7.jpg', likes: 31, comments: 'Моя бабушка случайно чихнула с фотоаппаратом в руках и у неё получилась фотография лучше.', description: 'Отдыхаем...' },
+  { url: 'photos/8.jpg', likes: 65, comments: 'Всё отлично!', description: 'Вот это тачка!' },
+  { url: 'photos/9.jpg', likes: 171, comments: 'Как можно было поймать такой неудачный момент?!', description: 'Цените каждое мгновенье.' },
+  { url: 'photos/10.jpg', likes: 40, comments: 'Я поскользнулся на банановой кожуре и уронил фотоаппарат на кота и у меня получилась фотография лучше.', description: 'Вот это тачка!' },
+  { url: 'photos/11.jpg', likes: 113, comments: 'Лица у людей на фотке перекошены, как будто их избивают.', description: 'Цените тех, кто рядом с вами и отгоняйте все сомненья.' },
+  { url: 'photos/12.jpg', likes: 197, comments: 'В целом всё неплохо. Но не всё.', description: 'Затусили с друзьями на море' },
+  { url: 'photos/13.jpg', likes: 63, comments: 'Лица у людей на фотке перекошены, как будто их избивают.', description: 'Цените каждое мгновенье.' },
+  { url: 'photos/14.jpg', likes: 48, comments: 'Лица у людей на фотке перекошены, как будто их избивают.', description: 'Отдыхаем...' },
+  { url: 'photos/15.jpg', likes: 100, comments: 'В целом всё неплохо. Но не всё.', description: 'Тестим новую камеру!' },
+  { url: 'photos/16.jpg', likes: 141, comments: 'В целом всё неплохо. Но не всё.', description: 'Цените каждое мгновенье.' },
+  { url: 'photos/17.jpg', likes: 123, comments: 'Когда вы делаете фотографию, хорошо бы убирать палец из кадра. В конце концов это просто непрофессионально.', description: 'Как же круто тут кормят' },
+  { url: 'photos/18.jpg', likes: 25, comments: 'Всё отлично!', description: 'Затусили с друзьями на море' },
+  { url: 'photos/19.jpg', likes: 19, comments: 'Я поскользнулся на банановой кожуре и уронил фотоаппарат на кота и у меня получилась фотография лучше.', description: 'Цените каждое мгновенье.' },
+  { url: 'photos/20.jpg', likes: 82, comments: 'Моя бабушка случайно чихнула с фотоаппаратом в руках и у неё получилась фотография лучше.', description: 'Не обижайте всех словами...' },
+  { url: 'photos/21.jpg', likes: 53, comments: 'Моя бабушка случайно чихнула с фотоаппаратом в руках и у неё получилась фотография лучше.', description: 'Затусили с друзьями на море' },
+  { url: 'photos/22.jpg', likes: 99, comments: 'Лица у людей на фотке перекошены, как будто их избивают.', description: 'Вот это тачка!' },
+  { url: 'photos/23.jpg', likes: 24, comments: 'В целом всё неплохо. Но не всё.', description: 'Тестим новую камеру!' },
+  { url: 'photos/24.jpg', likes: 181, comments: 'Когда вы делаете фотографию, хорошо бы убирать палец из кадра. В конце концов это просто непрофессионально.', description: 'Затусили с друзьями на море' },
+  { url: 'photos/25.jpg', likes: 41, comments: 'Моя бабушка случайно чихнула с фотоаппаратом в руках и у неё получилась фотография лучше.', description: 'Не обижайте всех словами...' }
 ]
-console.log(usersPhotoArr);
+// console.log(usersPhotoArr);
 
 
 
@@ -104,3 +109,45 @@ console.log(usersPhotoArr);
 // for (i = 0; i < usersPhotoArr.length; i++) {
 // usersPhotoArr[i].description = descArr[randomDescArr[i]]
 // }
+
+
+/* --- отрисовка шаблона в документ --- */
+
+
+
+let picturesArr = function (usersPhotoArr) {
+
+  // получаем блок, куда будем отрисовывать фотографии pictures
+  let pictures = document.querySelector('.pictures')
+  // console.log(pictures);
+
+  // получаем полный шаблон, по которому будем клонировать 
+  let picturesTemplate = document.getElementById('picture-template')
+  // console.log(picturesTemplate);
+
+  for (let i = 0; i < usersPhotoArr.length; i++) {
+
+    // получаем элемент шаблона и меняем SRC у img
+    picturesTemplate.content.querySelector('img').src = usersPhotoArr[i].url
+    
+    // получаем элемент шаблона likes и меняем 
+    picturesTemplate.content.querySelector('.picture-likes').textContent = usersPhotoArr[i].likes
+    
+    // получаем элемент шаблона likes и меняем 
+    picturesTemplate.content.querySelector('.picture-comments').textContent = usersPhotoArr[i].comments
+
+    // заносим клон (дубликат) шаблона в переменную
+    let picturesTemplateClone = picturesTemplate.content.cloneNode(true)
+    // клонируем клон (дубликат) шаблона в необходимое нам место
+    pictures.appendChild(picturesTemplateClone)
+  }
+
+
+
+}
+picturesArr(usersPhotoArr)
+
+
+
+
+
