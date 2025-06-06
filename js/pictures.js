@@ -25,7 +25,7 @@ let usersPhotoArr = [
   { url: 'photos/024.jpg,', likes: 15, comments: 'abc', description: 'qwerty' },
   { url: 'photos/025.jpg,', likes: 15, comments: 'abc', description: 'qwerty' }
 ]
-console.log(usersPhotoArr);
+// console.log(usersPhotoArr);
 
 /* Генератор случайных чисел от minIndexArr до maxIndexArr */
 let minIndexArr = 15
@@ -41,5 +41,4 @@ for (let i = 0; likesArr.length < usersPhotoArr.length ; i++) {
 for (i = 0; i < usersPhotoArr.length; i++) {
 usersPhotoArr[i].likes = likesArr[i]
 }
-
 
